@@ -1,0 +1,66 @@
+.icon-arrow-right {
+    content: url("/assets/icons/arrow-right.svg");
+}
+.icon-round-blue {
+    content: url("/assets/icons/round-blue.svg");
+}
+.icon-generate {
+    content: url("/assets/icons/generate.svg");
+}
+.icon-star {
+    content: url("/assets/icons/star.svg");
+}
+.icon-edit {
+    content: url("/assets/icons/edit.svg");
+}
+.icon-round-orange {
+    content: url("/assets/icons/round-orange.svg");
+}
+.icon-round  {
+    content: url("/assets/icons/round.svg");
+}
+.icon-share {
+    content: url("/assets/icons/share.svg");
+}
+.icon-gamma {
+    content: url("/assets/icons/gamma.svg");
+}
+.icon-dot-white {
+    content: url("/assets/icons/dot-white.svg");
+}
+.icon-check {
+    content: url("/assets/icons/check.svg");
+}
+.icon-close {
+    content: url("/assets/icons/close.svg");
+}
+.icon-check-green {
+    content: url("/assets/icons/check-green.svg");
+}
+.icon-close-red {
+    content: url("/assets/icons/close-red.svg");
+}
+.icon-avatar {
+    content: url("/assets/icons/icon-avatar.svg");
+}
+.icon-purple-star {
+    content: url("/assets/icons/star-purple.svg");
+}
+.icon-burnt-star {
+    content: url("/assets/icons/burnt-star.svg");
+}
+.icon-green-star {
+    content: url("/assets/icons/green-star.svg");
+}
+.icon-left {
+    content: url("/assets/icons/left.svg");
+}
+.icon-right {
+    content: url("/assets/icons/right.svg");
+}
+.icon-plus {
+    content: url("/assets/icons/plus.svg");
+}
+.icon-stars {
+    content: url("/assets/icons/icon-stars.svg");
+}
