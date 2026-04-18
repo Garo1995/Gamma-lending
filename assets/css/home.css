@@ -537,8 +537,11 @@ h3{
     border-radius: 200px;
     padding: 12px;
 }
+.micro-invest-cont{
+    gap: 12px;
+}
 .micro-invest-cont h2 {
-    max-width: 410px;
+    max-width: 444px;
     margin: auto;
 }
 .micro-invest-cont p {
@@ -909,7 +912,7 @@ h3{
 }
 
 .transforms-content h2 {
-    max-width: 444px;
+    max-width: 465px;
 }
 
 .transforms-content p{
@@ -2455,7 +2458,10 @@ footer {
         display: block;
     }
 
+    .compare-js{
+        margin-top: 20px;
 
+    }
     .compare-main {
         position: relative;
         display: flex;

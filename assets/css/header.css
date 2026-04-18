@@ -15,12 +15,15 @@ header{
 }
 
 .menu-mobile {
-    /*gap: 163px;*/
-    gap: 76px;
+    gap: 163px;
 }
 .menu-scroll{
-    gap: 38px;
+    gap: 48px;
 }
+.header-ru .menu-mobile{
+    gap: 80px;
+}
+
 .menu-scroll a{
     display: flex;
     font-weight: 400;
@@ -33,7 +36,6 @@ header{
 .menu-scroll a:hover, .menu-scroll a:active{
     color: #9F9F92;
 }
-
 .header-btn{
     gap: 10px;
 }
@@ -97,11 +99,20 @@ header .try-btn{
     .menu-scroll {
         gap: 32px;
     }
+    .header-ru .menu-mobile {
+        gap: 49px;
+    }
+    .menu-scroll {
+        gap: 20px;
+    }
 }
 @media (max-width: 1020px) {
     .nav-menu{
         position: relative;
         z-index: 1;
+    }
+    .header-ru .menu-mobile {
+        gap: 32px;
     }
     .open-menu{
         display: flex;
