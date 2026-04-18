@@ -190,7 +190,7 @@ h3{
     margin-top: 100px;
 }
 .possibilities-header h2 {
-    max-width: 310px;
+    max-width: 455px;
     width: 100%;
 }
 .possibilities-header p {
@@ -304,6 +304,7 @@ h3{
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
+    white-space: nowrap;
 }
 .beta-btn i {
     content: url("/assets/icons/arrow-right.svg");
@@ -1525,6 +1526,10 @@ h3{
     background-image: url('../img/invest.webp');
 }
 
+.invest-ru {
+    background-image: url('../img/invest-ru.webp');
+}
+
 .invest-content {
     padding-top: 66px;
     max-width: 445px;
@@ -2503,6 +2508,13 @@ footer {
         height: 432px;
         background-image: url(../img/invest-mob.png);
     }
+
+
+    .invest-ru {
+        background-image: url(../img/invest-mob-ru.png);
+    }
+
+
     .invest-content .try-btn {
         width: max-content;
     }
@@ -2587,5 +2599,23 @@ footer {
     .image {
         max-width: 236px;
         width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .presentation-files-photo img {
+        height: 260px;
+        object-fit: cover;
     }
 }

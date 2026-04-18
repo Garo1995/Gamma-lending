@@ -186,5 +186,19 @@ header .try-btn{
         line-height: 18px;
     }
 
+
+
+
+
+
+
+
+
+
+
+    header .try-btn {
+        padding: 12px 1px;
+        font-size: 12px;
+    }
 }
 
