@@ -14,12 +14,12 @@ header{
     width: 100%;
 }
 
-.menu-mobile{
-    gap: 163px;
-
+.menu-mobile {
+    /*gap: 163px;*/
+    gap: 76px;
 }
 .menu-scroll{
-    gap: 48px;
+    gap: 38px;
 }
 .menu-scroll a{
     display: flex;
