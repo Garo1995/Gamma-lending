@@ -1856,12 +1856,14 @@ footer {
     .hero-btn {
         margin-top: 28px;
     }
+    .possibilities-content{
+        width: 100%;
+    }
     .possibilities-content ul {
         gap: 40px 40px;
         flex-wrap: wrap;
     }
     .possibilities-content ul li {
-        width: max-content;
         height: 36px;
         display: flex;
         justify-content: center;
