@@ -183,15 +183,13 @@ h3{
     width: 100%;
 }
 .possibilities-content ul li{
-    width: max-content;
     opacity: 0.50;
     height: 48px;
     display: flex;
     justify-content: center;
 }
 .possibilities-content ul li img{
-    height: auto;
-    width: auto;
+    height: 100%;
     object-fit: contain;
 }
 .possibilities-header {
@@ -1873,9 +1871,6 @@ footer {
     }
     .possibilities-content ul li {
         height: 36px;
-        display: flex;
-        justify-content: center;
-        flex: 0 1 auto;
     }
     .possibilities-header {
         margin-top: 60px;
