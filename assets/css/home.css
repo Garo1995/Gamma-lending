@@ -2434,6 +2434,7 @@ footer {
     }
     .possibilities-content ul li {
         height: 28px;
+        width: max-content;
     }
 
     .possibilities-content ul {
