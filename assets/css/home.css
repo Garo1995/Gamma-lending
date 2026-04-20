@@ -86,8 +86,13 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s;
 }
-
+.btn-line:hover{
+    background: rgba(31, 31, 31, 1);
+    border: 1px solid rgba(31, 31, 31, 1);
+    color: #FFFFFF;
+}
 .hero-body {
     gap: 20px;
 }
@@ -173,6 +178,7 @@ h3{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0;
+    background-image: url('../img/cloud-bg.webp');
 }
 
 .possibilities-content ul {
@@ -216,15 +222,18 @@ h3{
     background-color: #FFFFFF;
     border-radius: 16px;
     border: 1px solid #46455114;
-    padding: 24px 24px 24px 32px;
+    padding: 24px 24px;
     margin-bottom: 16px;
     width: 100%;
     gap: 24px;
     overflow: hidden;
     justify-content: space-between;
 }
-.possibilities-card-item:nth-child(3){
-    padding-left: 50px;
+.possibilities-card-item:nth-child(1){
+    padding-left: 32px;
+}
+.possibilities-card-item:nth-child(4){
+    padding-left: 32px;
 }
 .possibilities-mob{
     display: none;
@@ -311,11 +320,23 @@ h3{
     font-size: 16px;
     line-height: 20px;
     white-space: nowrap;
+    transition: 0.3s;
 }
 .beta-btn i {
     content: url("/assets/icons/arrow-right.svg");
     width: 15px;
     height: 14px;
+    transition: 0.3s;
+}
+
+
+
+.beta-btn:hover {
+    background: rgba(31, 31, 31, 1);
+    color: #FFFFFF;
+}
+.beta-btn:hover i{
+    filter: brightness(0) invert(1);
 }
 
 /*--------------------*/
@@ -569,29 +590,39 @@ h3{
     gap: 8px;
 }
 .micro-invest-item ul li  {
-    padding: 8px 14px 8px 8px;
-    background-color: transparent;
+    padding: 8px 14px;
+    background: transparent;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-transform: unset;
     white-space: nowrap;
     cursor: pointer;
     transition: 0.3s;
     gap: 4px;
+    border-radius: 200px;
+
+}
+.micro-invest-item ul li:hover{
+    background: rgba(70, 69, 81, 0.08);
 }
 .micro-invest-item ul li.active {
-    background-color: #1F1F1F;
+    background: #1F1F1F;
     color: #FFFFFF;
-    border-radius: 200px;
+
+}
+.micro-invest-item ul li.active{
+    background: #1F1F1F;
 }
 .micro-invest-click .icon-dot-white {
     display: none;
 }
 .micro-invest-click.active .icon-dot-white {
     display: block;
+
 }
 .micro-invest-js{
     margin-top: 32px;
@@ -635,9 +666,13 @@ h3{
     left: -77px;
     top: 172px;
     gap: 9px;
-    max-width: 320px;
+    max-width: 326px;
     width: 100%;
     z-index: 2;
+}
+.tabs-col-inv .invest-tabs-col{
+    top: 69px;
+
 }
 .invest-tabs-box{
     border: 0.75px solid #46455114;
@@ -722,7 +757,9 @@ h3{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    background-image: url('../img/cloud-bg.webp')
 }
+
 
 .generate-title{
     gap: 12px;
@@ -833,6 +870,13 @@ h3{
     background-color: transparent;
     width: 28px;
     height: 28px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons-check button:hover{
+    opacity: 0.7;
 }
 .second-block {
     display: flex;
@@ -906,12 +950,64 @@ h3{
     width: 100%;
     position: relative;
     z-index: 3;
+    background: rgba(248, 249, 251, 1);
+    border: 1px solid rgba(70, 69, 81, 0.08);
+    border-radius: 8px;
+    padding: 10px;
 }
-.add-menu-mob{
-    display: none;
+.add-menu-search{
+    gap: 8px;
 }
 
+.add-menu-search input {
+    gap: 8px;
+    background: #FFFFFF;
+    border: 1px solid rgba(70, 69, 81, 0.08);
+    padding: 12px 14px;
+    border-radius: 8px;
+    color: rgba(70, 69, 81, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
 
+}
+.add-menu-search input::placeholder {
+    color: rgba(70, 69, 81, 1);
+}
+.menu-search-btn{
+    background: rgba(18, 82, 211, 1);
+    max-width: 46px;
+    width: 100%;
+    height: 46px;
+    border-radius: 6px;
+    padding: 12px;
+
+}
+.add-menu-text{
+    margin-top: 8px;
+}
+.add-menu-text ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+}
+.add-menu-text ul li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(31, 31, 31, 1);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 6px 8px;
+}
+
+.add-menu-text ul li i{
+    max-width: 24px;
+    width: 100%;
+}
 
 .transforms{
     padding: 100px 0 80px;
@@ -1264,6 +1360,9 @@ h3{
     cursor: pointer;
     min-height: 450px;
 }
+.small-card:hover{
+    background: rgba(248, 249, 251, 1);
+}
 .small-card-content {
     padding-top: 28px;
     border-top: 1px solid #46455114;
@@ -1278,10 +1377,22 @@ h3{
     position: absolute;
     top: 0;
     right: 0;
-    background-color: transparent;
+    background: rgba(31, 31, 31, 1);
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
- .badge-purple {
+.small-card:hover .arrow-btn{
+    background: rgba(18, 82, 211, 1);
+}
+
+
+.badge-purple {
     background-color: #FCE7F5;
     color: #EB49A7;
 }
@@ -1327,7 +1438,7 @@ h3{
     width: 100%;
 }
 .try-btn {
-    background-color: #1252D3;
+    background: #1252D3;
     color: #FFFFFF;
     gap: 6px;
     padding: 10px 20px 10px 10px;
@@ -1339,10 +1450,14 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+    white-space: nowrap;
 
+}
+.try-btn:hover{
+    background: rgba(31, 31, 31, 1);
+}
 .demo-watch-grey {
-    background-color: #F8F9FB;
+    background: #F8F9FB;
     height: 332px;
     border-radius: 16px;
  }
@@ -1443,6 +1558,11 @@ h3{
     right: 0;
     margin: 0;
     border-radius: 50%;
+    transition: 0.3s;
+}
+.experiences-arrow-btn .button-left:hover, .experiences-arrow-btn .button-right:hover{
+    border: 1px solid rgba(18, 82, 211, 1);
+
 }
 .experiences .experience-pagination{
     display: none;
@@ -1484,6 +1604,9 @@ h3{
     transition: 0.3s;
     border: 1px solid #46455114;
 }
+.accordion-boxes:hover{
+    background: rgba(248, 249, 251, 1);
+}
 .accordion-click{
     width: 100%;
     display: flex;
@@ -1512,19 +1635,46 @@ h3{
     padding: 0 16px 20px 20px;
 }
 
-.icon-plus{
-    transition: 0.3s;
-    cursor: pointer;
-}
-.open .icon-plus{
+
+.open .accord-plus{
     transform: rotate(45deg);
 }
+.accord-plus{
+    transition: 0.3s;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.accord-plus:before{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background: rgba(22, 22, 22, 1);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.accord-plus:after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 14px;
+    background: rgba(22, 22, 22, 1);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.open .accord-plus:before,
+.open .accord-plus:after{
+    background: rgba(18, 82, 211, 1);
+}
 
-
-
-
-
-
+.accord-plus:hover:before,
+.accord-plus:hover:after{
+    background: rgba(18, 82, 211, 1);
+}
 
 .invest {
     background-position: center;
@@ -1554,6 +1704,7 @@ h3{
 
 .invest-content p {
     margin: 12px auto 28px auto;
+    text-align: center;
 }
 
 
@@ -1588,6 +1739,9 @@ footer {
     font-weight: 400;
     opacity: 0.7;
 }
+.footer-bottom ul li a:hover{
+    opacity: 1;
+}
 .footer-bottom p {
     color: #FFFFFF;
     opacity: 0.5;
@@ -1606,17 +1760,80 @@ footer {
     width: 100%;
 }
 
+.footer-content{
+    position: relative;
+    z-index: 42;
+}
 
 
 
+.buttons-generate{
+    background: rgba(248, 249, 251, 1);
+    border: 1px solid rgba(70, 69, 81, 0.08);
+     gap: 8px;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 454px;
+    width: 100%;
+
+}
 
 
+.buttons-generate .try-btn{
+    border-radius: 5px;
+}
 
+.generate-icons{
+    background: rgba(255, 255, 255, 1);
+    max-width: 44px;
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(70, 69, 81, 0.08);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.generate-icons:hover{
+    background: rgba(31, 31, 31, 1);
+}
+.generate-icons:hover i{
+    filter: brightness(0) invert(1);
+}
 
+.generate-left, .generate-right{
+    max-width: 44px;
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+    transition: 0.3s;
 
+}
 
+.generate-left:before, .generate-right:before{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid rgba(22, 22, 22, 1);
+    border-right: 2px solid rgba(22, 22, 22, 1);
+    transition: 0.3s;
+}
 
-
+.generate-left:before{
+    transform: rotate(-135deg);
+    margin-left: 2px;
+    opacity: 0.40;
+}
+.generate-right:before{
+    transform: rotate(45deg);
+    margin-right: 2px;
+}
 
 
 
@@ -1797,7 +2014,11 @@ footer {
     .invest {
         height: 550px;
     }
-
+    .buttons-generate {
+        gap: 5px;
+        padding: 6px;
+        max-width: 430px;
+    }
 
 
 }
@@ -1897,7 +2118,7 @@ footer {
     .possibilities-card-item {
         padding: 20px;
         gap: 21px;
-        height: 304px;
+        min-height: 304px;
         flex-direction: column;
         align-items: center;
         margin: 0;
@@ -2240,10 +2461,22 @@ footer {
     footer {
         padding: 40px 0;
     }
-    .generate-images{
-        background: #F8F9FB;
+
+    .business-study {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
+
+    .full-cycle {
+        margin: 60px 0;
+    }
+    .menu-search-btn {
+        max-width: 35px;
+        height: 35px;
+        border-radius: 4px;
+        padding: 6px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -2265,9 +2498,9 @@ footer {
     }
 
     .micro-invest-item {
-        width: 100%;
         margin: 0 auto;
         overflow-x: scroll;
+        padding-right: 40px;
     }
     .micro-invest-rel{
         position: relative;
@@ -2296,6 +2529,7 @@ footer {
     .micro-invest-item ul{
         width: max-content;
     }
+
     .micro-investments-img {
         position: relative;
         flex-direction: column;
@@ -2377,6 +2611,13 @@ footer {
         background-color: #1F1F1F;
         color: #FFFFFF;
         border-radius: 200px;
+    }
+
+    .advantages-invest ul li i {
+        display: none;
+    }
+    .advantages-invest ul li.active i{
+        display: block;
     }
     .advantages-content-item {
         margin: 28px auto 20px;
@@ -2488,8 +2729,8 @@ footer {
         align-items: center;
     }
     .compare-main ul li  {
-        padding: 6px 12px 6px;
-        background-color: transparent;
+        padding: 6px 12px 6px 6px;
+        background: transparent;
         font-weight: 500;
         font-size: 14px;
         line-height: 18px;
@@ -2502,7 +2743,7 @@ footer {
         gap: 4px;
     }
     .compare-main ul li.active {
-        background-color: #1F1F1F;
+        background: #1F1F1F;
         color: #FFFFFF;
         border-radius: 200px;
     }
@@ -2512,8 +2753,35 @@ footer {
     .compare-main.active .icon-dot-white {
         display: block;
     }
+    .icon-change-AI {
+        width: 18px;
+        display: flex;
+        justify-content: center;
+    }
 
-
+    .add-menu-search input {
+        gap: 8px;
+        padding: 10px 10px;
+        border-radius: 6px;
+        font-size: 12.3px;
+        line-height: 15px;
+    }
+    .add-menu-img {
+        border-radius: 7px;
+        padding: 7px;
+    }
+    .add-menu-text ul li i {
+        max-width: 18px;
+    }
+    .add-menu-text ul li {
+        gap: 6px;
+        font-size: 12px;
+        line-height: 17px;
+        padding: 4px 6px;
+    }
+    .add-menu-text {
+        margin-top: 6px;
+    }
 
     .labels ul {
         padding: 0 0 2px 14px;
@@ -2555,7 +2823,9 @@ footer {
     .card-footer{
         flex-direction: column;
     }
-
+    .micro-invest-item {
+        width: 100%;
+    }
    .card-header  .student-btn {
         margin-bottom: 0;
         position: absolute;
@@ -2600,14 +2870,9 @@ footer {
     .compare-pic.active{
         display: flex;
     }
-    .add-menu-desc{
-        display: none;
-    }
-    .add-menu-mob{
-        display: block;
-    }
+
     .top-content {
-        padding: 20px 20px 0;
+        padding: 20px 20px;
         border-radius: 16px;
         max-height: 396px;
     }
@@ -2618,19 +2883,157 @@ footer {
 
 
 
+    .possibilities {
+        background-image: url('../img/cloud-bg-mob.png');
+    }
 
 
+    .app-icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 10px;
+    }
 
 
+    .gamma-content-card {
+        border-radius: 12px;
+    }
 
-
-
-
-
-
-
+    .micro-invest-rel:after {
+        width: 60px;
+    }
+    .first-block {
+        padding: 18px 20px;
+    }
+    .generate-images-flex h3 {
+        max-width: 228px;
+        width: 100%;
+    }
+    .generate-info h3 {
+        font-size: 10px;
+        line-height: 14px;
+    }
     .presentation-files-photo img {
         height: 260px;
         object-fit: cover;
     }
+
+    .icons-check {
+        gap: 6px;
+    }
+    .icons-check button {
+        width: 18px;
+        height: 18px;
+    }
+    .generate-info {
+        border-radius: 5px;
+        padding: 9px 8px 9px 9px;
+        margin-bottom: 8px;
+        width: 100%;
+    }
+    .generate-left, .generate-right {
+        max-width: 27px;
+        height: 27px;
+        border-radius: 3px;
+    }
+
+    .try-btn .icon-change-AI {
+        width: 14px;
+    }
+    .buttons-generate .try-btn {
+        border-radius: 3px;
+        font-size: 10px;
+        padding: 6px 10px 6px 7px;
+        line-height: 15px;
+        gap: 3px;
+        width: auto;
+    }
+    .generate-icons {
+        max-width: 27px;
+        height: 27px;
+        border-radius: 3px;
+    }
+    .generate-icons i{
+        width: 12px;
+    }
+    .buttons-generate {
+        max-width: 276px;
+    }
+    .generate-icons i {
+        width: 16px;
+    }
+    .generate-icons-first i{
+        width: 10px;
+    }
+    .generate-left:before, .generate-right:before {
+        width: 5px;
+        height: 5px;
+        border-top: 1px solid rgba(22, 22, 22, 1);
+        border-right: 1px solid rgba(22, 22, 22, 1);
+    }
+
+    .icon-check {
+        width: 12px;
+    }
+
+
+    .image-stars {
+        top: 159px;
+        left: 10px;
+        width: 53px;
+    }
+
+    .image-stars-bg {
+        bottom: 133px;
+        right: 9px;
+        width: 59px;
+    }
+    .top-content:before{
+        display: none;
+    }
+
+    .top-content:after{
+        display: none;
+    }
+    .bottom-content-img {
+        margin-top: 23px;
+    }
+
+
+
+    .generate-images {
+        background-image: url('../img/cloud-bg2-mob.webp')
+    }
+    .advantages-btn.active + ul {
+        border-radius: 12px;
+    }
+    .detail-card {
+        gap: 12px;
+        margin-top: 29px;
+    }
+    .review-card-item{
+        margin-top: 12px;
+    }
+    .card-img-holder {
+        width: 80px;
+        height: 80px;
+    }
+    .student-btn {
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 7px;
+    }
+    .small-card-content ul {
+        gap: 5px;
+    }
+    .small-card-content ul li:nth-child(3){
+        display: none;
+    }
+
+    .demo-watch-grey {
+        height: 200px;
+        border-radius: 12px;
+    }
+
+
 }

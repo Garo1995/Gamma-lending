@@ -198,9 +198,13 @@ header .try-btn{
     }
 
 
+    .menu-mobile .btn-line {
+        max-width: 134px;
+    }
 
-
-
+    .menu-mobile .try-btn {
+        max-width: 182px;
+    }
 
 
 

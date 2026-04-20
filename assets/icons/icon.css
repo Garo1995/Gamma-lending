@@ -64,3 +64,27 @@
 .icon-stars {
     content: url("/assets/icons/icon-stars.svg");
 }
+.icon-crop {
+    content: url("/assets/icons/icon-crop.svg");
+}
+.icon-vandak {
+    content: url("/assets/icons/icon-vandak.svg");
+}
+.icon-change-AI {
+    content: url("/assets/icons/change-AI.svg");
+}
+.icon-improve {
+    content: url("/assets/icons/icon-improve.svg");
+}
+.icon-write {
+    content: url("/assets/icons/icon-write.svg");
+}
+.icon-shorten {
+    content: url("/assets/icons/icon-shorten.svg");
+}
+.icon-translate {
+    content: url("/assets/icons/icon-translate.svg");
+}
+.icon-correct {
+    content: url("/assets/icons/icon-correct.svg");
+}
