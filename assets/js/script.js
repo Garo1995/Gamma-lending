@@ -1,12 +1,4 @@
 
-jQuery(window).on("load", function() {
-    jQuery(".twentytwenty-container").twentytwenty({
-        default_offset_pct: 0.5,
-    });
-});
-
-
-
 
 $(document).ready(function () {
     $('.open-menu').on('click', function () {
@@ -15,13 +7,11 @@ $(document).ready(function () {
             $('.menu-content').addClass('transition-menu');
             $('body').addClass('body_fix');
         } else {
-            $('.menu-content').addClass('menu-width');
             $('body').removeClass('body_fix');
             $('.menu-content').removeClass('transition-menu');
         }
     });
     $('.nav-menu a').on('click', function () {
-        $('.menu-content').addClass('menu-width');
         $('body').removeClass('body_fix');
         $('.menu-content').removeClass('transition-menu');
         $('.open-menu').removeClass('close-menu');
@@ -29,7 +19,63 @@ $(document).ready(function () {
 });
 
 
+function initSplide() {
+    let direction = window.innerWidth < 1020 ? "ltr" : "ttb";
 
+    const splide = new Splide(".splide", {
+        type: "loop",
+        direction: direction,
+        height: direction === "ttb" ? "332" : "",
+        focus: "center",
+        wheel: false,
+        speed: 1200,
+        perPage: 1,
+        gap: "20px",
+        pagination: true,
+        start:1,
+
+        breakpoints: {
+            1020: {
+                direction: "horizontal",
+                height: "",
+                perPage: 2,
+                start:1,
+
+            },
+            927: {
+                direction: "horizontal",
+                perPage: 2,
+            },
+            750: {
+                direction: "horizontal",
+                perPage:1,
+                gap: "30px",
+            },
+            320: {
+                direction: "horizontal",
+                perPage: 1,
+            },
+            0: {
+                direction: "horizontal",
+                perPage: 1.2,
+            },
+        },
+
+
+    });
+
+    splide.mount();
+
+    let interval = setInterval(() => {
+        if (direction === "ttb") {
+            splide.go(">");
+        }
+    }, 3500);
+
+
+}
+
+initSplide();
 
 
 $(function () {
@@ -141,201 +187,6 @@ $(document).ready(function () {
 
 
 
-function initSplide() {
-    let direction = window.innerWidth < 1020 ? "ltr" : "ttb";
-
-    const splide = new Splide(".splide", {
-        type: "loop",
-        direction: direction,
-        height: direction === "ttb" ? "332" : "",
-        focus: "center",
-        wheel: false,
-        speed: 1200,
-        perPage: 1,
-        gap: "20px",
-        pagination: true,
-        start:1,
-
-        breakpoints: {
-            1020: {
-                direction: "horizontal",
-                height: "",
-                perPage: 2,
-                start:1,
-
-            },
-            927: {
-                direction: "horizontal",
-                perPage: 2,
-            },
-            750: {
-                direction: "horizontal",
-                perPage:1,
-                gap: "30px",
-            },
-            320: {
-                direction: "horizontal",
-                perPage: 1,
-            },
-            0: {
-                direction: "horizontal",
-                perPage: 1.2,
-            },
-        },
-
-
-    });
-
-    splide.mount();
-
-    let interval = setInterval(() => {
-        if (direction === "ttb") {
-            splide.go(">");
-        }
-    }, 3500);
-
-
-}
-
-initSplide();
-
-
-
-
-
-
-let experienceSwiper = new Swiper(".experience-slider", {
-    slidesPerView: 3,
-    spaceBetween: 16,
-    loop: true,
-    breakpoints: {
-        '1020': {
-            slidesPerView: 3,
-            spaceBetween: 16,
-        },
-        '767': {
-            slidesPerView: 2,
-            spaceBetween: 12,
-        },
-        '640': {
-            slidesPerGroup: 1,
-            slidesPerView: 2,
-            spaceBetween: 12,
-        },
-        '320': {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            spaceBetween: 12,
-
-        },
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-        el: ".experience-pagination",
-        clickable: true,
-    },
-});
-
-
-let possibilitiesSwiper = new Swiper(".possibilities-slider", {
-    slidesPerView: 2,
-    spaceBetween: 16,
-    loop: true,
-    breakpoints: {
-        '1020': {
-            slidesPerView: 2,
-            spaceBetween: 16,
-        },
-        '767': {
-            slidesPerView: 2,
-            spaceBetween: 12,
-        },
-        '640': {
-            slidesPerGroup: 1,
-            slidesPerView: 2,
-            spaceBetween: 12,
-        },
-        '320': {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            spaceBetween: 12,
-
-        },
-    },
-    pagination: {
-        el: ".possibilities-pag",
-        clickable: true,
-    },
-});
-let gammaSwiper = new Swiper(".gamma-content-slider", {
-    slidesPerView: 2,
-    spaceBetween: 16,
-    loop: true,
-    breakpoints: {
-        '1020': {
-            slidesPerView: 2,
-            spaceBetween: 16,
-        },
-        '767': {
-            slidesPerView: 2,
-            spaceBetween: 12,
-        },
-        '640': {
-            slidesPerGroup: 1,
-            slidesPerView: 2,
-            spaceBetween: 12,
-        },
-        '320': {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            spaceBetween: 12,
-
-        },
-    },
-    pagination: {
-        el: ".gamma-pag",
-        clickable: true,
-    },
-});
-
-let presentSwiper = new Swiper(".present-slider", {
-    slidesPerView: 2,
-    spaceBetween: 16,
-    loop: true,
-    breakpoints: {
-        '1020': {
-            slidesPerView: 2,
-            spaceBetween: 16,
-        },
-        '767': {
-            slidesPerView: 2,
-            spaceBetween: 12,
-        },
-        '640': {
-            slidesPerGroup: 1,
-            slidesPerView: 2,
-            spaceBetween: 12,
-        },
-        '320': {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            spaceBetween: 12,
-
-        },
-    },
-    pagination: {
-        el: ".present-pagination",
-        clickable: true,
-    },
-});
-
-
-
-
-
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -364,3 +215,51 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+
+
+
+
+
+const container = document.getElementById('sliderContainer');
+const divider   = document.getElementById('divider');
+const panelBefore = document.getElementById('panelBefore');
+
+let isDragging = false;
+
+function setPosition(x) {
+    const rect = container.getBoundingClientRect();
+    let pct = (x - rect.left) / rect.width * 100;
+    pct = Math.max(0, Math.min(100, pct)); // <-- было 5 и 95, теперь 0 и 100
+
+    divider.style.left = pct + '%';
+    panelBefore.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+}
+
+// Mouse
+container.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    setPosition(e.clientX);
+    e.preventDefault();
+});
+
+window.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    setPosition(e.clientX);
+});
+
+window.addEventListener('mouseup', () => { isDragging = false; });
+
+// Touch
+container.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    setPosition(e.touches[0].clientX);
+    e.preventDefault();
+}, { passive: false });
+
+window.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    setPosition(e.touches[0].clientX);
+}, { passive: false });
+
+window.addEventListener('touchend', () => { isDragging = false; });
