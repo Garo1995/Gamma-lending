@@ -48,16 +48,17 @@ function initSplide() {
             },
             750: {
                 direction: "horizontal",
-                perPage:1,
-                gap: "30px",
+                perPage: 1.5,
+
             },
+
             320: {
                 direction: "horizontal",
                 perPage: 1,
             },
             0: {
                 direction: "horizontal",
-                perPage: 1.2,
+                perPage: 1,
             },
         },
 

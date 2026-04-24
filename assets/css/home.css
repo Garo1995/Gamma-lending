@@ -176,18 +176,46 @@ h3{
 
 }
 
-.hero-swiper-marg h3{
-    max-width: 240px;
+.hero-swiper-languag{
+    max-width: 252px;
     width: 100%;
+    top: 102px;
+    right: 43px;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid rgba(18, 82, 211, 1);
+    padding: 6px;
+}
+.hero-swiper-languag:before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 7px;
+    height: 126px;
+    background-image: url("../img/card-ram-left.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-swiper-languag:after{
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 7px;
+    height: 126px;
+    background-image: url("../img/card-ram-rig.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-swiper-marg h3{
     color: #1F1F1F;
     font-family: 'Probity';
     font-weight: 400;
     font-size: 36px;
     line-height: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 112px;
-    right: 49px;
+
+
 }
 
 
@@ -501,7 +529,6 @@ h3{
 .possibilities-social-media,
 .possibilities-documents {
     max-width: 240px;
-    height: 152px;
 }
 .possibilities-img span{
     position: absolute;
@@ -2033,30 +2060,47 @@ h3{
 }
 .text-img {
     margin: 0 auto 12px auto;
-    max-width: 438px;
+    max-width: 432px;
     width: 100%;
     position: relative;
+    padding: 4px 0;
+    border: 1px solid rgba(18, 82, 211, 1);
+    display: flex;
+    justify-content: center;
 }
-.text-img p{
+.text-img p {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
     color: rgba(70, 69, 81, 1);
-    margin-top: 7px;
-
+    max-width: 420px;
+    margin: 0;
 }
 .text-img:before{
     content: "";
-    width: 100%;
+    width: 9px;
     height: 56px;
     position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url("../img/text-ramka.png");
+    top: -4px;
+    left: -4px;
+    background-image: url("../img/text-ramka-left.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
+.text-img:after{
+    content: "";
+    width: 9px;
+    height: 56px;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-image: url("../img/text-ramka-rig.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 .add-menu-img {
     max-width: 380px;
     margin: auto;
@@ -2500,7 +2544,32 @@ h3{
 .presentation-files-img {
     width: calc(50% - 8px);
     height: auto;
+    position: relative;
 }
+
+.presentation-files-img .save-btn-dow {
+    position: absolute;
+    top: 58px;
+    right: 159px;
+    z-index: 2;
+    gap: 3.44px;
+    border-radius: 4.31px;
+    padding-top: 6.89px;
+    padding-right: 10.33px;
+    padding-bottom: 6.89px;
+    padding-left: 6.89px;
+    font-size: 12.06px;
+    line-height: 15.5px;
+
+}
+
+.presentation-files-img .save-btn-dow img{
+    width: 20px;
+}
+
+
+
+
 .presentations-top-content .files-btn {
     width: 64px;
     height: 64px;
@@ -3352,6 +3421,24 @@ footer {
     .invest-tabs-text ul li {
         font-size: 15px;
     }
+    .growth-audience {
+        top: 228px;
+        left: 69px;
+        max-width: 317px;
+    }
+    .profits-quick {
+        left: -148px;
+    }
+    .trends-des {
+        top: 149px;
+        right: -72px;
+        max-width: 404px;
+        width: 100%;
+    }
+    .training-program-card {
+        bottom: 103px;
+        right: 151px;
+    }
 
 }
 
@@ -3391,22 +3478,11 @@ footer {
     .possibilities {
         padding: 80px 0;
     }
-    .possibilities-presentations {
-        max-width: 165px;
-    }
-    .possibilities-websites {
-        max-width: 165px;
-    }
+
     .possibilities-card-item {
-        background-color: #FFFFFF;
-        border-radius: 16px;
-        border: 1px solid #46455114;
         padding: 20px 20px 20px 24px;
         margin-bottom: 16px;
-        width: 100%;
         gap: 21px;
-        overflow: hidden;
-        justify-content: space-between;
     }
     h3 {
         font-size: 20px;
@@ -3511,7 +3587,7 @@ footer {
         line-height: 20px;
     }
     .invest {
-        height: 550px;
+        height: 650px;
     }
     .buttons-generate {
         gap: 5px;
@@ -3519,7 +3595,176 @@ footer {
         max-width: 430px;
     }
 
+    .growth-audience {
+        top: 248px;
+        left: 79px;
+        max-width: 267px;
+    }
+    .possibilities-card-item:nth-child(4) {
+        padding-left: 20px;
+    }
+    .possibilities-card-item:nth-child(1) {
+        padding-left: 22px;
+    }
+    .leader-enhancing h2 {
+        font-size: 27px;
+        max-width: 308px;
+        top: 23px;
+        left: 26px;
+    }
+    .leader-enhancing-col {
+        top: -33px;
+        right: 22px;
+    }
+    .full-cycle-fon {
+        padding: 28px 20px 0;
+    }
+    .training-program {
+        bottom: 21px;
+        left: 21px;
+        max-width: 348px;
+        gap: 8px;
+    }
+    .training-program h3 {
+        font-size: 20px;
+    }
+    .training-program p {
+        font-size: 12px;
+    }
+    .sales-copy-center {
+        gap: 11px;
+        top: 21px;
+        left: 21px;
+    }
+    .hero-swiper-marg h3 {
+        font-size: 30px;
+    }
+    .hero-swiper-languag {
+        max-width: 209px;
+        top: 98px;
+        right: 54px;
+        padding: 4px;
+    }
+    .hero-swiper-languag:before {
+        height: 104px;
+        background-size: contain;
+    }
+    .hero-swiper-languag:after {
+        height: 104px;
+        background-size: contain;
+    }
+    .possibilities-card-info {
+        max-width: 235px;
+        gap: 6px;
+    }
+    .full-cycle-card {
+        max-width: 400px;
+        width: 100%;
+    }
+    .full-cycle-fon {
+        max-width: 550px;
 
+    }
+    .auto-presentation-name p {
+        font-size: 6.31px;
+        line-height: 8.06px;
+    }
+    .business-digital-tit h3 {
+        margin: 0;
+    }
+    .growth-audience h4 {
+        font-size: 14px;
+        padding: 12px;
+    }
+    .presentation-files-img .save-btn-dow {
+        top: 58px;
+        right: 127px;
+        gap: 2.44px;
+        border-radius: 3.31px;
+        padding-top: 4.89px;
+        padding-right: 8.33px;
+        padding-bottom: 4.89px;
+        padding-left: 4.89px;
+        font-size: 11.06px;
+        line-height: 12.5px;
+    }
+    .profits-quick h4 {
+        right: 29px;
+        top: 71px;
+        font-size: 21.17px;
+        line-height: 28px;
+    }
+    .profits-quick {
+        left: -45px;
+        max-width: 359px;
+        bottom: -64px;
+    }
+    .trends-des {
+        top: 181px;
+        right: -44px;
+        max-width: 300px;
+        width: 100%;
+    }
+    .trends-des h4 {
+        top: 64px;
+        max-width: 200px;
+        font-size: 18.5px;
+        line-height: 23px;
+    }
+    .training-program-name {
+        bottom: 12px;
+        left: 12px;
+        max-width: 188px;
+    }
+    .training-program-name h4 {
+        font-size: 9.97px;
+    }
+    .training-program-card {
+        bottom: 117px;
+        right: 132px;
+        max-width: 240px;
+        width: 100%;
+    }
+    .perspective-world {
+        bottom: -24px;
+        right: -134px;
+        max-width: 240px;
+        width: 100%;
+    }
+    .save-btn-dow {
+        border-radius: 4px;
+        gap: 5px;
+        padding: 7px 13px 7px;
+        font-size: 12px;
+        line-height: 19px;
+    }
+    .save-btn-dow img{
+        width: 16px;
+    }
+    .save-btn-line img{
+        width: 16px;
+    }
+    .save-btn-line {
+        padding: 8px 12px;
+        border-radius: 5px;
+        gap: 5px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .card-save-pptx {
+        max-width: 180px;
+        padding: 6.49px;
+        margin-left: 10px;
+    }
+
+    .card-save-pptx ul li {
+        padding: 5.45px 9.49px;
+        font-size: 12.32px;
+        line-height: 11.06px;
+    }
+    .topbar-undo-cent img {
+        width: 6.4px;
+    }
 }
 
 
@@ -3656,8 +3901,18 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-
-
+    .training-program p {
+        font-size: 8px;
+    }
+    .training-program h3 {
+        font-size: 13.46px;
+    }
+    .training-program {
+        bottom: 20px;
+        left: 20px;
+        max-width: 218px;
+        gap: 6px;
+    }
     .beta-btn {
         gap: 8px;
         max-width: 300px;
@@ -3670,7 +3925,10 @@ footer {
         padding: 60px 0;
         margin-top: 60px;
     }
-
+    .presentation-files-img .save-btn-dow {
+        top: 67px;
+        right: 75px;
+    }
     .full-cycle-boxes {
         gap: 28px;
         flex-direction: column;
@@ -3684,8 +3942,78 @@ footer {
         padding-left: 0;
         width: 100%;
     }
+    .profits-quick {
+        left: -36px;
+        max-width: 282px;
+        bottom: -45px;
+    }
+    .profits-quick h4 {
+        right: 26px;
+        top: 51px;
+        font-size: 16.17px;
+        line-height: 21px;
+    }
+    .growth-audience {
+        top: auto;
+        left: 60px;
+        max-width: 207px;
+        bottom: 158px;
+    }
+    .trends-des {
+        top: auto;
+        right: -31px;
+        max-width: 215px;
+        width: 100%;
+        bottom: 233px;
+    }
+    .trends-des h4 {
+        top: 43px;
+        max-width: 159px;
+        font-size: 13.5px;
+        line-height: 18px;
+    }
+    .training-program-card {
+        bottom: 104px;
+        right: 105px;
+        max-width: 171px;
+        width: 100%;
+    }
+    .training-program-name p {
+        font-size: 5.57px;
+    }
+    .possibilities-header h2 {
+        max-width: 271px;
+    }
+    .training-program-name span {
+        margin: 3px 0;
+    }
+    .training-program-name h4 {
+        font-size: 5.97px;
+    }
+    .training-program-name {
+        bottom: 9px;
+        left: 10px;
+        max-width: 95px;
+    }
+    .perspective-world {
+        bottom: -13px;
+        right: -52px;
+        max-width: 140px;
+        width: 100%;
+    }
+    .perspective-world     .training-program-name h4 {
+        font-size: 7.97px;
+    }
 
-
+    .perspective-world .training-program-name {
+        max-width: 120px;
+        bottom: auto;
+        top: 25px;
+        left: 36px;
+    }
+    .card-save-wid {
+        max-width: 192px;
+    }
     .full-cycle-content .try-btn {
         margin-top: 24px;
         width: 100%;
@@ -3697,11 +4025,88 @@ footer {
         width: 100%;
     }
 
-
+    .leader-enhancing h2 {
+        font-size: 20px;
+        max-width: 267px;
+        top: 18px;
+        left: 17px;
+    }
+    .leader-enhancing-col {
+        top: -18px;
+        right: 19px;
+        gap: 2.3px;
+        width: 22px;
+    }
+    .leader-enhancing-box {
+        gap: 1px;
+        width: 22px;
+        height: 22px;
+        border-radius: 2.33px;
+        padding: 2px;
+    }
+    .leader-enhancing-box small {
+        font-size: 3.36px;
+        line-height: 4px;
+    }
     .business-study-content{
         display: none;
     }
+    .leader-enhancing-box img{
+        width: 7px;
+    }
+    .hero-swiper-marg h3 {
+        font-size: 20px;
 
+    }
+    .hero-swiper-languag {
+        max-width: 150px;
+        top: 73px;
+        right: 32px;
+        padding: 3px;
+    }
+    .hero-swiper-languag:before {
+        height: 70px;
+        left: -2px;
+        top: -2px;
+    }
+    .hero-swiper-languag:after {
+        height: 71px;
+        right: -5px;
+    }
+    .colors-art-btn {
+        height: 13.56px;
+        border-radius: 1.75px;
+        gap: 3.3px;
+        padding-top: 3px;
+        padding-right: 4.79px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+        font-size: 4.79px;
+        line-height: 6.49px;
+    }
+    .colors-art-btn .icon-change-AI {
+        width: 7px;
+    }
+
+    .colors-art-probity {
+        font-size: 4.79px;
+        line-height: 5px;
+        width: 44px;
+        border-radius: 1.75px;
+        gap: 1.4px;
+        padding-top: 3px;
+        padding-right: 3.5px;
+        padding-bottom: 3px;
+        padding-left: 4.79px;
+        margin-left: 3px;
+    }
+    .icon-arr {
+        width: 7px;
+    }
+    .colors-art {
+        bottom: 25px;
+        left: 79px;
+    }
     .gamma-content-mobile{
         display: flex;
         flex-direction: column;
@@ -3729,6 +4134,316 @@ footer {
     .gamma-content-rel .swiper-pagination-bullet-active {
         background: #1252D3;
     }
+
+    .sales-copy-center {
+        gap: 11px;
+        top: 19px;
+        left: 19px;
+    }
+    .sales-copy {
+        font-size: 8px;
+        padding: 3px;
+    }
+
+    .sales-copy:before {
+        width: 5px;
+        height: 21px;
+    }
+    .sales-copy:after {
+        width: 5px;
+        height: 21px;
+    }
+
+    .hero-swiper-slide .add-menu-search input {
+        gap: 8px;
+        padding: 3px 3px;
+        border-radius: 3px;
+        font-size: 4.5px;
+        line-height: 6px;
+        height: 14px;
+    }
+    .hero-swiper-slide .menu-search-btn {
+        max-width: 13px;
+        height: 13px;
+        border-radius: 2px;
+        padding: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-swiper-slide .menu-search-btn i {
+        width: 6px;
+        display: flex;
+    }
+
+    .add-menu-search {
+        gap: 3px;
+    }
+
+    .hero-swiper-slide .add-menu-img {
+        max-width: 111px;
+        border-radius: 3px;
+        padding: 2px;
+    }
+    .hero-swiper-slide .add-menu-text ul li i {
+        max-width: 6px;
+    }
+    .hero-swiper-slide .add-menu-text ul li {
+        gap: 2px;
+        font-size: 4.42px;
+        line-height: 6.18px;
+        padding: 1px 2px;
+    }
+
+
+
+    .investments-info h2 {
+        font-size: 24px;
+    }
+
+    .invest-tabs-col{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .investments-info p {
+        margin-top: 8px;
+        max-width: 354px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+
+
+
+    .investments-info {
+        top: 96px;
+        left: 50%;
+        max-width: 330px;
+    }
+
+    .investments-items {
+        margin-top: 35px;
+        gap: 10px;
+    }
+    .investments-item strong {
+        font-size: 16px;
+
+    }
+
+
+
+
+
+    .investments-item p {
+        margin: 0;
+        font-size: 9px;
+        line-height: 12px;
+    }
+    .investments-item {
+        max-width: 84px;
+        gap: 4px;
+    }
+
+    .dynamics-mount-photo {
+        max-width: 314px;
+    }
+    .dynamics-mount-text h3 {
+        max-width: 157px;
+        font-size: 14px;
+    }
+    .dynamics-mount-text ul li {
+        font-size: 9px;
+    }
+    .dynamics-mount-text ul {
+        margin-top: 6px;
+        margin-left: 16px;
+    }
+
+    .dynamics-mount-text {
+        max-width: 186px;
+    }
+
+    .dynamics-mount {
+        gap: 12px;
+        left: 50%;
+        top: 90px;
+        max-width: 501px;
+    }
+    .dynamics-mount-photo ul li {
+        font-size: 6.5px;
+        line-height: 8.06px;
+    }
+
+    .dynamics-mount-photo ul {
+        padding-left: 21px;
+        margin-top: -12px;
+        max-width: 280px;
+        width: 100%;
+    }
+    .sleep-control-text h3, .branding-action h3, .sales-analytics h3 {
+        font-size: 19px;
+        line-height: 21.08px;
+    }
+    .branding-action p {
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .branding-action {
+        top: 72px;
+    }
+    .sleep-control-text ul li {
+        font-size: 10.54px;
+        line-height: 15px;
+    }
+    .sleep-control-text {
+        max-width: 185px;
+    }
+
+
+    .sleep-control-flex {
+        top: 144px;
+        left: 47%;
+        gap: 30px;
+        max-width: 428px;
+    }
+
+
+    .sales-analytics {
+        top: 55px;
+    }
+    .analytics-diagram {
+        max-width: 324px;
+        margin-top: 16px;
+    }
+
+    .sales-analytics h3 {
+        max-width: 278px;
+    }
+
+    .analytics-diagram-name p {
+        font-size: 9px;
+    }
+    .analytics-diagram-name {
+        margin-top: 9px;
+        gap: 7px;
+    }
+    .human-memory h3 {
+        font-size: 22px;
+    }
+    .human-memory p {
+        font-size: 9px;
+        margin-top: 5px;
+    }
+
+    .human-memory img {
+        max-width: 299px;
+        margin: 8px 0;
+    }
+    .human-memory {
+        top: 63px;
+    }
+    .generate-images {
+        background: rgba(248, 249, 251, 1) url(../img/cloud-bg.webp) center no-repeat;
+    }
+    .label-pill {
+        padding: 6px 10px;
+        font-size: 12px;
+        line-height: 1;
+        top: 18px;
+        left: 18px;
+    }
+    .before-title {
+        font-size: 26px;
+    }
+
+    .panel-before {
+        border-radius: 12px;
+        padding: 65px 25px 40px;
+        gap: 0;
+    }
+    .before-cards {
+        gap: 8px;
+        margin-top: 24px;
+        align-items: flex-start;
+
+    }
+    .after-cards {
+        gap: 8px;
+        margin-top: 24px;
+        align-items: flex-start;
+    }
+
+    .before-card {
+        padding: 14px;
+        height: 240px;
+        border-radius: 10px;
+    }
+
+    .before-card img{
+        width: 80px;
+    }
+    .before-card-name h3 {
+        font-size: 15px;
+    }
+    .before-card-name p {
+        margin-top: 3px;
+        font-size: 12px;
+        max-width: 115px;
+        width: 100%;
+    }
+    .panel-after {
+        border-radius: 12px;
+        padding: 65px 25px 40px;
+    }
+    .after-header h3 {
+        font-size: 26px;
+    }
+    .after-header p {
+        font-size: 14px;
+        line-height: 117%;
+    }
+    .after-card-photo {
+        height: 155px;
+    }
+    .after-card-photo img {
+        border-radius: 6px 6px 0 0;
+    }
+    .after-card-info {
+        padding: 12px 14px 19px;
+    }
+    .after-card-info p {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .after-card-name-badge {
+        bottom: 9px;
+        padding: 4px 9px;
+        font-size: 10px;
+        line-height: 14px;
+        gap: 5px;
+    }
+
+    .slider-container {
+        height: 409px;
+        border-radius: 12px;
+    }
+
+
+
+
     .swiper-pagination{
         display: flex;
         align-items: center;
@@ -3802,12 +4517,12 @@ footer {
         display: block;
         margin-top: 28px;
     }
-    .presentation-files-photo{
+    .presentation-files-img{
         margin: 0 auto;
-        max-width: 600px;
+        max-width: 400px;
         width: 100%;
     }
-    .presentation-files-photo img{
+    .presentation-files-img img{
         width: 100%;
         border-radius: 12px;
     }
@@ -3979,9 +4694,7 @@ footer {
 }
 
 @media (max-width: 767px) {
-    .hero-swiper-marg {
-        margin-left: -48px;
-    }
+
     .possibilities-content ul {
         gap: 20px 40px;
     }
@@ -4149,8 +4862,234 @@ footer {
         justify-content: center;
     }
 
+    .hero-swiper-languag {
+        max-width: 143px;
+        top: 60px;
+        right: 31px;
+        padding: 3px;
+    }
+    .full-cycle-card {
+        justify-content: flex-end;
+    }
 
+    .investments-info {
+        top: 60px;
+        left: 50%;
+        max-width: 294px;
+    }
 
+    .investments-info h2 {
+        font-size: 16px;
+        max-width: 233px;
+    }
+    .dynamics-mount-photo {
+        max-width: 192px;
+    }
+    .dynamics-mount-text h3 {
+        max-width: 98px;
+        font-size: 10px;
+    }
+    .dynamics-mount-text ul li {
+        font-size: 7px;
+    }
+    .dynamics-mount-text {
+        max-width: 148px;
+    }
+    .dynamics-mount {
+        gap: 12px;
+        left: 50%;
+        top: 79px;
+        max-width: 353px;
+    }
+    .dynamics-mount-photo ul {
+        padding-left: 15px;
+        margin-top: -6px;
+        max-width: 179px;
+    }
+
+    .branding-action {
+        top: 58px;
+    }
+    .investments-info p {
+        margin-top: 8px;
+        max-width: 204px;
+        font-size: 9px;
+        line-height: 15px;
+    }
+    .sleep-control-text h3, .branding-action h3, .sales-analytics h3 {
+        font-size: 14px;
+        line-height: 13.08px;
+    }
+    .sleep-control-flex {
+        top: 99px;
+        left: 42%;
+        gap: 30px;
+        max-width: 408px;
+    }
+    .sales-analytics h3 {
+        max-width: 200px;
+        line-height: 17.08px;
+    }
+    .analytics-diagram {
+        max-width: 227px;
+        margin-top: 10px;
+    }
+    .analytics-diagram-name p {
+        font-size: 7px;
+    }
+    .human-memory {
+        top: 43px;
+    }
+    .sleep-control-text {
+        max-width: 150px;
+    }
+    .branding-action p {
+        font-size: 8px;
+        line-height: 8px;
+    }
+    .human-memory h3 {
+        font-size: 15px;
+    }
+    .human-memory img {
+        max-width: 243px;
+        margin: 8px 0;
+    }
+    .panel-before {
+        border-radius: 12px;
+        padding: 59px 17px 32px;
+        gap: 0;
+    }
+    .panel-after {
+        border-radius: 12px;
+        padding: 59px 17px 32px;
+    }
+    .before-title {
+        font-size: 20px;
+    }
+    .before-cards {
+        gap: 5px;
+        margin-top: 14px;
+        align-items: flex-start;
+    }
+    .after-cards {
+        gap: 5px;
+        margin-top: 12px;
+        align-items: flex-start;
+    }
+    .after-card-photo {
+        height: 110px;
+    }
+    .before-card {
+        padding: 9px;
+        height: 190px;
+        border-radius: 8px;
+    }
+    .before-card-name h3 {
+        font-size: 10px;
+    }
+    .before-card-name p {
+        margin-top: 3px;
+        font-size: 8px;
+        max-width: 80px;
+        width: 100%;
+    }
+    .before-card img {
+        width: 60px;
+    }
+    .after-header h3 {
+        font-size: 20px;
+    }
+    .after-card {
+        border-radius: 6px;
+    }
+    .slider-container {
+        height: 315px;
+        border-radius: 11px;
+    }
+    .possibilities-card-item {
+        max-width: 386px;
+        margin: 0 auto;
+    }
+    .after-header p {
+        font-size: 9px;
+        line-height: 113%;
+    }
+
+    .after-card-info h4 {
+        font-size: 10px;
+        line-height: 120%;
+    }
+    .after-card-info p {
+        margin-top: 4px;
+        font-size: 8px;
+    }
+    .after-card-info {
+        padding: 12px 10px 14px;
+    }
+    .after-card-photo {
+        height: 130px;
+    }
+    .profits-quick {
+        left: -22px;
+        max-width: 190px;
+        bottom: -32px;
+    }
+
+    .profits-quick h4 {
+        right: 17px;
+        top: 36px;
+        font-size: 12.17px;
+        line-height: 15px;
+    }
+    .growth-audience h4 {
+        font-size: 8px;
+        padding: 7px;
+    }
+    .growth-audience {
+        top: auto;
+        left: 49px;
+        max-width: 139px;
+        bottom: 104px;
+    }
+    .trends-des {
+        top: auto;
+        right: -26px;
+        max-width: 156px;
+        width: 100%;
+        bottom: 138px;
+    }
+    .training-program-card {
+        bottom: 54px;
+        right: 93px;
+        max-width: 110px;
+        width: 100%;
+    }
+    .training-program-name {
+        bottom: 4px;
+        left: 4px;
+        max-width: 67px;
+    }
+    .training-program-name p {
+        font-size: 3px;
+    }
+    .training-program-name h4 {
+        font-size: 4.57px;
+        line-height: 6px;
+    }
+    .perspective-world {
+        bottom: -10px;
+        right: -57px;
+        max-width: 108px;
+        width: 100%;
+    }
+    .perspective-world .training-program-name {
+        max-width: 90px;
+        top: 22px;
+        left: 22px;
+    }
+    .perspective-world .training-program-name h4 {
+        font-size: 3.97px;
+    }
 }
 
 
@@ -4530,6 +5469,691 @@ footer {
         height: 200px;
         border-radius: 12px;
     }
+
+
+    .splide__slide{
+        width: 100%!important;
+    }
+    .leader-enhancing h2 {
+        font-size: 18px;
+        max-width: 214px;
+        top: 18px;
+        left: 18px;
+    }
+    .hero-swiper-languag {
+        top: 60px;
+        right: 23px;
+    }
+    .colors-art {
+        bottom: 22px;
+        left: 64px;
+    }
+    .full-cycle-card {
+        min-height: auto;
+        padding: 20px 20px;
+    }
+    .auto-presentation-flex {
+        gap: 5px;
+    }
+    .auto-presentation-name strong {
+        font-size: 6.17px;
+        line-height: 7.8px;
+    }
+    .auto-presentation-name p {
+        font-size: 4.11px;
+        line-height: 6.06px;
+    }
+    .auto-presentation-name {
+        bottom: 20px;
+        gap: 1px;
+    }
+    .struc-content-cnt {
+        margin-top: 13px;
+        margin-bottom: -16px;
+    }
+    .struc-content-tit h4 {
+        font-size: 7.61px;
+        line-height: 7.48px;
+    }
+    .invest-tabs-fon {
+        width: 23px;
+        padding: 7px 0;
+    }
+    .icon-keter {
+        width: 7px;
+    }
+    .invest-tabs-fon span {
+        font-size: 7.5px;
+        line-height: 9.5px;
+        margin-left: 3px;
+    }
+    .invest-tabs-name {
+        padding: 6px;
+        gap: 0 5px;
+    }
+    .invest-tabs-name h4 {
+        font-size: 7px;
+        line-height: 8.5px;
+    }
+    .icon-ket {
+        width: 12px;
+    }
+    .full-cycle-card .invest-tabs-name ul li {
+        font-size: 6.32px;
+        line-height: 8.19px;
+    }
+    .full-cycle-card .invest-tabs-name{
+        gap: 0 5px;
+
+    }
+    .struc-content-cnt .invest-tabs-box {
+        margin-top: 4px;
+    }
+    .topbar-title span {
+        font-size: 2.8px;
+        line-height: 3.4px;
+    }
+    .topbar-undo-cent .save-btn-dow {
+        font-size: 3.8px;
+        line-height: 3.4px;
+        gap: 0.9px;
+        border-radius: 1.6px;
+        padding-top: 1.2px;
+        padding-right: 2.93px;
+        padding-bottom: 1.2px;
+        padding-left: 2.93px;
+    }
+    .topbar-undo-cent img {
+        width: 4px;
+    }
+    .btn-ghost {
+        font-size: 3.5px;
+        line-height: 1.1px;
+        gap: 0.9px;
+        border-radius: 1.6px;
+        padding-top: 1px;
+        padding-right: 3.63px;
+        padding-bottom: 2px;
+        padding-left: 3.63px;
+    }
+    .btn-ghost svg{
+        width: 4px;
+        height: 4px;
+    }
+    .topbar-undo-redo {
+        width: 12px;
+        gap: 1.67px;
+        border-radius: 1.2px;
+        padding: 1.67px;
+    }
+    .topbar-undo-redo svg{
+        width: 4px;
+        height: 4px;
+    }
+    .topbar-title {
+        gap: 1.2px;
+        border-radius: 0.6px;
+        padding-top: 1.2px;
+        padding-right: 2.13px;
+        padding-bottom: 1.2px;
+        padding-left: 2.27px;
+    }
+    .topbar-title-cent img {
+        width: 25px;
+    }
+    .topbar {
+        top: 20px;
+        padding: 0 6px;
+    }
+    .enhancing-gamma {
+        top: 30px;
+        right: 3px;
+        gap: 3.2px;
+        height: 160px;
+    }
+    .enhancing-gamma-box {
+        width: 11px;
+        height: 11px;
+        gap: 0.55px;
+        border-radius: 1px;
+        padding: 1.84px;
+    }
+    .enhancing-gamma-box svg{
+        width: 5px;
+        height: 5px;
+    }
+    .edit-icon svg{
+        width: 5px;
+        height: 5px;
+    }
+    .enhancing-gamma-box small {
+        font-size: 2px;
+        line-height: 2.7px;
+    }
+    .move-layer {
+        width: 70px;
+        left: -12px;
+        bottom: -6px;
+    }
+    .move-layer span {
+        position: absolute;
+        top: 3px;
+        left: 5px;
+        color: rgba(120, 121, 123, 1);
+        font-weight: 500;
+        font-size: 5.97px;
+        line-height: 8.34px;
+        text-align: center;
+    }
+    .tooltip-layer {
+        right: 59px;
+        bottom: 20px;
+        max-width: 79px;
+    }
+    .business-digital {
+        position: absolute;
+        top: 73px;
+        left: 45px;
+        max-width: 96px;
+        width: 100%;
+    }
+    .business-digital-tit {
+        padding: 2px;
+    }
+
+    .business-digital-tit h3 {
+        font-size: 7px;
+        line-height: 107%;
+    }
+    .business-digital-tit:before {
+        left: -2px;
+        width: 3px;
+        height: 30px;
+        background-size: contain;
+    }
+    .business-digital-tit:after {
+        top: -3px;
+        right: -3px;
+        width: 3px;
+        height: 23px;
+        background-size: contain;
+    }
+    .business-digital h5 {
+        margin-top: 5px;
+        font-size: 5px;
+    }
+    .business-digital p {
+        margin-top: 8px;
+        font-size: 3.6px;
+    }
+    .business-digerte {
+        bottom: -16px;
+        width: 75px;
+    }
+    .business-digert-art {
+        gap: 1px;
+        top: 2px;
+        left: 2px;
+    }
+
+    .business-digerte .colors-art-btn {
+        font-size: 2.35px;
+        line-height: 3.84px;
+        gap: 0.99px;
+        padding-top: 1.96px;
+        padding-right: 3.25px;
+        padding-bottom: 1.66px;
+        padding-left: 1.66px;
+        border-radius: 1.15px;
+    }
+    .colors-art-btn .icon-change-AI {
+        width: 4px;
+    }
+    .inter-sel-font {
+        font-size: 2.35px;
+        line-height: 2px;
+        gap: 1.13px;
+        border-radius: 1.03px;
+        padding-top: 1.66px;
+        padding-right: 2.66px;
+        padding-bottom: 1.66px;
+        padding-left: 3.25px;
+        width: 21px;
+    }
+    .inter-sel-font .icon-arr {
+        width: 4px;
+    }
+    .business-digert-art {
+        gap: 1px;
+        top: 0.6px;
+        left: 1px;
+    }
+    .tooltip-laye-btn {
+        gap: 0.6px;
+        border-radius: 1.03px;
+        padding-top: 1.67px;
+        padding-right: 3.27px;
+        padding-bottom: 1.67px;
+        padding-left: 1.67px;
+        font-size: 2.37px;
+        line-height: 2px;
+        left: 8px;
+        top: 1.5px;
+    }
+    .tooltip-laye-btn .icon-change-AI {
+        width: 3.5px;
+    }
+    .tooltip-font {
+        top: -9px;
+        right: 13px;
+        font-size: 2.03px;
+        line-height: 3px;
+        width: 17px;
+        height: 7px;
+        padding-bottom: 1px;
+    }
+
+    .card-for-mob-cyc>img{
+        width: 126px;
+    }
+    .card-save-wid {
+        max-width: 155px;
+    }
+    .card-save-btn {
+        gap: 7px;
+    }
+    .save-btn-dow {
+        border-radius: 3px;
+        gap: 3px;
+        padding: 7px 10px 7px;
+        font-size: 9px;
+        line-height: 13px;
+    }
+    .save-btn-dow img {
+        width: 13px;
+    }
+    .save-btn-line {
+        padding: 7px 10px;
+        border-radius: 4px;
+        gap: 4px;
+        font-size: 10px;
+        line-height: 11px;
+    }
+    .save-btn-line img {
+        width: 12px;
+    }
+    .card-save-pptx {
+        max-width: 134px;
+        padding: 5.49px;
+        margin-left: 9px;
+    }
+    .full-cycle-card ul {
+        gap: 3px;
+    }
+
+    .card-save-pptx ul li {
+        padding: 4.45px 6.19px;
+        font-size: 8.92px;
+        line-height: 10.06px;
+    }
+    .full-cycle-boxes:last-child {
+        padding-bottom: 0;
+    }
+    .investments-info h2 {
+        font-size: 12px;
+        max-width: 168px;
+        line-height: 106%;
+    }
+
+    .investments-info p {
+        margin-top: 6px;
+        max-width: 165px;
+        font-size: 6px;
+        line-height: 8px;
+    }
+    .investments-info {
+        top: 37px;
+        left: 50%;
+        max-width: 232px;
+    }
+    .investments-items {
+        margin-top: 21px;
+        gap: 6px;
+    }
+    .investments-item {
+        max-width: 45px;
+        gap: 2px;
+    }
+    .investments-item strong {
+        font-size: 8px;
+    }
+    .investments-info p {
+        margin-top: 3px;
+        max-width: 162px;
+        font-size: 5px;
+        line-height: 6px;
+    }
+    .dynamics-mount-photo {
+        max-width: 124px;
+    }
+    .dynamics-mount-photo ul {
+        padding-left: 6px;
+        margin-top: -5px;
+        max-width: 116px;
+    }
+    .dynamics-mount-photo ul li {
+        font-size: 3.5px;
+        line-height: 5.06px;
+    }
+    .dynamics-mount-text {
+        max-width: 91px;
+    }
+
+    .dynamics-mount-text h3 {
+        max-width: 68px;
+        font-size: 7px;
+    }
+
+    .dynamics-mount-text ul {
+        margin-top: 4px;
+        margin-left: 12px;
+    }
+    .dynamics-mount-text ul li {
+        font-size: 4.5px;
+    }
+    .dynamics-mount {
+        gap: 9px;
+        left: 50%;
+        top: 48px;
+        max-width: 221px;
+    }
+    .branding-action {
+        top: 30px;
+    }
+    .sleep-control-text h3, .branding-action h3, .sales-analytics h3 {
+        font-size: 10px;
+        line-height: 11.08px;
+    }
+    .branding-action p {
+        font-size: 6px;
+        line-height: 6px;
+    }
+    .branding-action {
+        gap: 5px;
+    }
+    .sleep-control-text ul {
+        margin-top: 4px;
+        margin-left: 14px;
+    }
+    .sleep-control-text ul li {
+        font-size: 5.54px;
+        line-height: 7px;
+    }
+    .sleep-control-text {
+        max-width: 100px;
+    }
+    .sleep-control-flex {
+        top: 62px;
+        left: 41%;
+        gap: 28px;
+        max-width: 255px;
+    }
+    .sales-analytics {
+        top: 30px;
+    }
+    .sales-analytics h3 {
+        max-width: 153px;
+    }
+
+    .analytics-diagram {
+        max-width: 152px;
+        margin-top: 7px;
+    }
+    .analytics-diagram ul li {
+        font-size: 2.66px;
+        line-height: 4.2px;
+    }
+
+    .analytics-diagram ul {
+        margin-top: -4px;
+        max-width: 166px;
+        margin-left: -10px;
+        margin-right: 20px;
+    }
+    .analytics-diagram ul li:nth-child(2) {
+        left: 18px;
+    }
+    .analytics-diagram ul li:nth-child(3) {
+        left: 10px;
+    }
+
+    .analytics-diagram ul li:nth-child(4) {
+        left: 5px;
+    }
+    .analytics-diagram-name {
+        margin-top: 6px;
+        gap: 5px;
+    }
+    .analytics-diagram-name p {
+        font-size: 4.6px;
+    }
+    .analytics-diagram-name span {
+        width: 1px;
+        height: 7px;
+    }
+    .human-memory {
+        top: 28px;
+    }
+    .human-memory h3 {
+        font-size: 11px;
+    }
+    .human-memory p {
+        font-size: 6px;
+        margin-top: 4px;
+    }
+
+    .human-memory img {
+        max-width: 136px;
+        margin: 6px 0;
+    }
+
+
+.slider-container{
+    display: none;
+}
+    .compare-mobile {
+        margin-top: 21px;
+    }
+    .compare-pic-mos{
+        position: relative;
+        padding: 33px 15px 25px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 12px;
+        border: 1px solid rgba(70, 69, 81, 0.08);
+        width: 100%;
+    }
+    .label-pill {
+        padding: 4px 6px;
+        font-size: 6px;
+        line-height: 1;
+        top: 8px;
+        left: 9px;
+    }
+    .compare-pic-adter:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/gamma-fon.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 12px;
+    }
+
+    .before-title {
+        font-size: 13px;
+    }
+    .before-cards {
+        gap: 4px;
+        margin-top: 8px;
+    }
+
+    .before-card {
+        padding: 6px;
+        height: 109px;
+        border-radius: 4px;
+    }
+    .before-card img {
+        width: 37px;
+    }
+    .before-card-name h3 {
+        font-size: 5.6px;
+    }
+    .before-card-name p {
+        margin-top: 3px;
+        font-size: 5.3px;
+        max-width: 58px;
+    }
+
+    .label-pill.after {
+        right: 7px;
+    }
+
+    .after-header h3 {
+        font-size: 13px;
+    }
+    .after-header {
+        gap: 10px;
+        padding-right: 16px;
+    }
+    .after-cards {
+        gap: 4px;
+        margin-top: 8px;
+    }
+    .after-card-photo {
+        height: 71px;
+    }
+    .after-card-name-badge {
+        bottom: 4px;
+        padding: 2px 4px;
+        font-size: 5.3px;
+        line-height: 9px;
+        gap: 3px;
+    }
+    .badge-dot {
+        width: 3px;
+        height: 3px;
+    }
+    .after-card-info {
+        padding: 7px 6px 7px;
+    }
+    .after-card-info h4 {
+        font-size: 5.6px;
+    }
+    .after-card-info p {
+        margin-top: 3px;
+        font-size: 5.3px;
+    }
+    .presentation-files-img .save-btn-dow {
+        top: 57px;
+        right: 65px;
+        gap: 1.44px;
+        border-radius: 2.31px;
+        padding-top: 4.29px;
+        padding-right: 6.33px;
+        padding-bottom: 3.99px;
+        padding-left: 3.89px;
+        font-size: 9.46px;
+        line-height: 12.5px;
+    }
+    .presentation-files-img .save-btn-dow img {
+        width: 14px;
+    }
+    .profits-quick {
+        left: -18px;
+        max-width: 128px;
+        bottom: -19px;
+    }
+    .profits-quick h4 {
+        right: 11px;
+        top: 23px;
+        font-size: 8.17px;
+        line-height: 9px;
+    }
+    .growth-audience {
+        left: 30px;
+        max-width: 97px;
+        bottom: 77px;
+    }
+    .growth-audience h4 {
+        font-size: 5px;
+        padding: 6px;
+    }
+    .trends-des {
+        top: auto;
+        right: -19px;
+        max-width: 106px;
+        width: 100%;
+        bottom: 81px;
+    }
+    .trends-des h4 {
+        top: 20px;
+        max-width: 67px;
+        font-size: 6.5px;
+        line-height: 9px;
+    }
+    .perspective-world {
+        bottom: -14px;
+        right: -46px;
+        max-width: 82px;
+        width: 100%;
+    }
+    .perspective-world .training-program-name {
+        max-width: 90px;
+        top: 12px;
+        left: 18px;
+    }
+    .training-program-card {
+        bottom: 20px;
+        right: 45px;
+        max-width: 81px;
+        width: 100%;
+    }
+    .training-program-name h4 {
+        font-size: 3.57px;
+        line-height: 5px;
+    }
+
+
+
+
+
+
+    .topbar-undo-cent  .save-btn-dow img {
+        width: 5px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
